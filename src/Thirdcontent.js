@@ -84,7 +84,7 @@ function thirdcontent() {
 					<ul className=" grid grid-row-3 gap-6  lg:justify-items-center">
 						<li className="p-0 w-full h-full m-auto ">
 							<a
-								href="#"
+								href="https://www.facebook.com/thecomradzofficial"
 								className="w-full h-full relative  md:right-10 grid grid-cols-2"
 								alt=""
 							>

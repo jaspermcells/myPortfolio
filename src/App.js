@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 import NavBar from "./NavBar";
 import Firstcontent from "./Firstcontent";
 import "./style.css"; // import the styles
-import SideNav from "./SideNav";
+
 import Secondcontent from "./Secondcontent";
-import ImageSlider from "./ImageSlider";
+
 import Thirdcontent from "./Thirdcontent";
 function App() {
 	return (
