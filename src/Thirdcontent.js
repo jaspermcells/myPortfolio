@@ -12,7 +12,7 @@ import Comradzshirt from "./pictures/comradzshirt.png";
 import Comradzwsb from "./pictures/comradzwsb.jpg";
 function thirdcontent() {
 	return (
-		<div className="md:h-1/2 lg:h-auto bg-red-800 lg:top-40 md:top-18 w-full m-auto h-auto z-50 gap-6	 mt-72 grid grid-flow-row grid-cols-2 grid-rows-2 justify-items-center relative p-24">
+		<div className="md:h-1/2 lg:h-auto bg-red-800 lg:top-40 md:top-18 w-full m-auto h-auto z-50 gap-6	 mt-72 grid grid-flow-row lg:grid-cols-2 lg:grid-rows-2 justify-items-center relative p-24 ">
 			{" "}
 			<div
 				id="col1"
