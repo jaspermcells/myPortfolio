@@ -3,7 +3,7 @@ import Callsvg from "./pictures/callsvg.svg";
 import Facebooksvg from "./pictures/facebooksvg.svg";
 import Instagramsvg from "./pictures/instagramsvg.svg";
 import Comradzaudition from "./pictures/comradz_audition.jpg";
-import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Carousel } from "react-responsive-carousel";
@@ -52,7 +52,7 @@ function thirdcontent() {
 						stopOnHover={true}
 					>
 						<div className="relative">
-							<img src={Comradzaudition} />
+							<img src={Comradzaudition} alt="comradz" />
 							<p className="legend text-2xl  ">
 								Comradz family will have an upcoming audition. Be part of the
 								growing family! Audition date will be posted soon. -Uploaded on
@@ -67,7 +67,7 @@ function thirdcontent() {
 							</p>
 						</div>
 						<div>
-							<img src={Comradzwsb} />
+							<img src={Comradzwsb} alt="comradz wsb" />
 							<p className="legend text-4xl  ">
 								{" "}
 								Comradz won 2nd place out of 65 crews in WSB Asia Mindanao last

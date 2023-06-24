@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react"; //, { useState, useEffect }//
 import "./style.css";
-import comradz2 from "./pictures/comradz2.mp4";
-import comradz3 from "./pictures/comradz3.jpg";
 import melvin1 from "./pictures/melvin1.jpg";
 import melvin2 from "./pictures/melvin2.jpg";
 import melvin3 from "./pictures/melvin3.jpg";
