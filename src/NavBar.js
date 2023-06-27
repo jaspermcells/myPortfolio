@@ -22,21 +22,21 @@ function NavBar() {
 	};
 	return (
 		<div
-			className=" sticky lg:h-20 bg-black drop-shadow-lg grid lg:grid-cols-2 text-slate-200 justify-items-center items-center justify-center md:grid-cols-1 sm:grid-cols-1 sm:h-60 md:h-50 z-50 shadow-white
-      
-      "
+			className={` sticky lg:h-20 bg-black drop-shadow-lg grid lg:grid-cols-2 text-slate-200 justify-items-center items-center justify-center md:grid-cols-1 sm:grid-cols-1 sm:h-60 md:h-50 z-50 shadow-white
+        top-0  py-4 px-8 ${scrolled ? "py-2" : "py-4"}`}
 		>
 			<div className="font-unifrakturCook text-slate-200 text-5xl border-white">
 				Comradz
 			</div>
-
 			<div
 				className={` top-0 left-0 w-full bg-black p-4 shadow ${
 					scrolled ? "py-2" : "py-4"
 				}`}
 			>
 				<button
-					className={"block lg:hidden bg-red-500 text-white py-2 px-4 rounded"}
+					className={
+						"block lg:hidden bg-red-500 text-white py-2 px-4 rounded ml-6"
+					}
 					onClick={toggleMenu}
 				>
 					{showMenu ? "Close" : "Menu"}

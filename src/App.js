@@ -12,12 +12,12 @@ function App() {
 	return (
 		<React.Fragment>
 			<div className="grid grid-cols-1 bg-black">
-				<NavBar />
+				<NavBar className="z-50" />
 				<Firstcontent />
 
-				<Secondcontent />
+				<Secondcontent className="z-30" />
 				<div className=" bg-transparent relative w-full h-auto mt-72 pt-40 pb-0 text-white text-center justify-items-start content-start ">
-					<div className="absolute w-full h-auto white z-50 text-bold text-6xl text-center m-0 border-4 border-x-0 border-red-700 left-0 font-unifrakturCook">
+					<div className="absolute w-full h-auto white z-30 text-bold text-6xl text-center m-0 border-4 border-x-0 border-red-700 left-0 font-unifrakturCook">
 						{" "}
 						Est. mmxx
 					</div>
