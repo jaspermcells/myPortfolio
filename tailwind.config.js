@@ -8,8 +8,12 @@ module.exports = {
 				NanumBrush: ["Nanum Brush Script"],
 			},
 		},
+		screens: {
+			xs: "480px",
+			// => @media (min-width: 640px) { ... }
+		},
+		plugins: [
+			// eslint-disable-next-line no-undef
+		],
 	},
-	plugins: [
-		// eslint-disable-next-line no-undef
-	],
 };
