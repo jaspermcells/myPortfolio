@@ -2,14 +2,18 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 
 function NavBar() {
-	const [scrolled, setScrolled] = useState(false);
-	const [showMenu, setShowMenu] = useState(false);
-
+	var [scrolled, setScrolled] = useState(false);
+	var [showMenu, setShowMenu] = useState(false);
+	var [showButton, setShowButton] = useState(false);
 	useEffect(() => {
-		const handleScroll = () => {
-			const isScrolled = window.scrollY > 0;
-			setScrolled(isScrolled);
+		var handleScroll = () => {
+			if (window.scrollY > 100) {
+				setShowButton(true);
+			} else {
+				setShowButton(false);
+			}
 		};
+		handleScroll();
 
 		window.addEventListener("scroll", handleScroll);
 		return () => {
@@ -17,33 +21,29 @@ function NavBar() {
 		};
 	}, []);
 
-	const toggleMenu = () => {
+	var toggleMenu = () => {
 		setShowMenu(!showMenu);
 	};
 	return (
 		<div
-			className={` sticky lg:h-20 bg-black drop-shadow-lg grid lg:grid-cols-2 text-slate-200 justify-items-center items-center justify-center md:grid-cols-1 sm:grid-cols-1 sm:h-60 md:h-50 z-50 shadow-white
+			className={` sticky lg:h-24 bg-black drop-shadow-lg grid lg:grid-cols-2 text-slate-200 justify-items-center items-center justify-center md:grid-cols-1 sm:grid-cols-1 sm:h-60 md:h-50 z-50 shadow-white
         top-0  py-4 px-8 ${scrolled ? "py-2" : "py-4"}`}
 		>
 			<div className="font-unifrakturCook text-slate-200 text-5xl border-white">
 				Comradz
 			</div>
-			<div
-				className={` top-0 left-0 w-full bg-black p-4 shadow ${
-					scrolled ? "py-2" : "py-4"
+
+			<button
+				className={`block lg:hidden bg-red-500 text-white py-2 px-4 rounded mt-6 ${
+					showButton ? "block" : "hidden"
 				}`}
+				onClick={toggleMenu}
 			>
-				<button
-					className={
-						"block lg:hidden bg-red-500 text-white py-2 px-4 rounded ml-6"
-					}
-					onClick={toggleMenu}
-				>
-					{showMenu ? "Close" : "Menu"}
-				</button>
-			</div>
+				{showMenu ? "Close" : "Menu"}
+			</button>
+
 			{showMenu && (
-				<ul className=" m-auto grid lg:grid-cols-3 sm:grid-cols-1 lg:gap-10 md:gap-5 sm:gap-3 font-NanumBrush text-2xl ">
+				<ul className=" m-auto grid lg:grid-cols-3 sm:grid-cols-1 lg:gap-10 md:gap-5 sm:gap-3 font-NanumBrush text-2xl text-center">
 					<li> Home </li>
 					<li> About </li>
 					<li> Contact </li>

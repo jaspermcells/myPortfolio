@@ -27,7 +27,7 @@ function Secondcontent() {
 		],
 	};
 	return (
-		<div className="bg-black lg:top-40 md:top-18 w-full m-auto h-full z-30 relative mt-72 grid grid-cols-1  justify-items-center ">
+		<div className="bg-black lg:top-40 md:top-18 w-full m-auto h-full z-30 relative mt-72 grid grid-cols-1  justify-items-center  lg:top-60 md:top-30 sm:top-0 ">
 			<div className=" ml-8 mt-24 h-3/4 grid grid-cols-1 text-5xl text-red-700  tracking-wide font-bold font-unifrakturCook z-50 ">
 				{" "}
 				Meet the Choreographer

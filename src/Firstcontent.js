@@ -24,8 +24,10 @@ function Firstcontent() {
 			<div className=" relative lg:top-36 md:top-22 sm:top-16 w-3/4 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 items-center justify-center m-auto font-unifrakturCook  tracking-wider ">
 				<div className="text-red-700 lg:text-9xl z-30  font-bold  drop-shadow-lg  md:text-8xl sm:text-3xl grid grid-cols-1 sm:text-center lg:text-left ">
 					{" "}
-					Comradz
-					<div className="text-red-500  lg:text-lg sm:text-xs font-serif mt-3 lg:w-auto ">
+					<div className=" mt-10 lg:w-4/5 lg:h-32 md:w-3/4 md:h-26 sm:w-1/2 sm:h-22 text-8xl grid ">
+						Comradz
+					</div>
+					<div className="text-red-500  lg:text-lg sm:text-xs font-serif mt-3 w-1/2 ">
 						<p className={`${showFullText ? "block  " : "truncate "}`}>
 							{text}
 						</p>
