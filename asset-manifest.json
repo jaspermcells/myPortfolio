@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/myPortfolio/static/css/main.4dfd96b2.css",
+    "main.js": "/myPortfolio/static/js/main.ef7f32f5.js",
+    "static/js/787.3503cf78.chunk.js": "/myPortfolio/static/js/787.3503cf78.chunk.js",
+    "static/media/IMG_0741_new-removebg-preview.png": "/myPortfolio/static/media/IMG_0741_new-removebg-preview.a025f81200ad922b3676.png",
+    "static/media/IMG_7743_2-removebg-preview.png": "/myPortfolio/static/media/IMG_7743_2-removebg-preview.e4ca8152d0bcc8617597.png",
+    "static/media/gg-removebg-preview.png": "/myPortfolio/static/media/gg-removebg-preview.83f0d4e687514de72aa6.png",
+    "static/media/IMG_0741-removebg-preview.png": "/myPortfolio/static/media/IMG_0741-removebg-preview.30e1ddd572d3cdc94ed9.png",
+    "static/media/IMG_0741_new-removebg-preview.svg": "/myPortfolio/static/media/IMG_0741_new-removebg-preview.fcb729d4f07105ebc8984ede97a5b8ab.svg",
+    "static/media/IMG_7743_2-removebg-preview.svg": "/myPortfolio/static/media/IMG_7743_2-removebg-preview.f69a4d2b7b93baccc697791f00031fb5.svg",
+    "static/media/gg-removebg-preview.svg": "/myPortfolio/static/media/gg-removebg-preview.41f60c34743905e8ff812a69b8f15ca6.svg",
+    "static/media/logo.svg": "/myPortfolio/static/media/logo.8a54c82ec9e772b36bb73e651aaac7d4.svg",
+    "static/media/reshot-icon-linkedin-G7YJ8FXBKT.svg": "/myPortfolio/static/media/reshot-icon-linkedin-G7YJ8FXBKT.9b8dd3118732733ca7ae511b8317b500.svg",
+    "static/media/reshot-icon-instagram-DM5FP6S9N2.svg": "/myPortfolio/static/media/reshot-icon-instagram-DM5FP6S9N2.c79efded1e37a73145ae4dd8c37c0751.svg",
+    "static/media/reshot-icon-digital-marketing-LBRZ9M6K5S.svg": "/myPortfolio/static/media/reshot-icon-digital-marketing-LBRZ9M6K5S.f707534d76551c15e33281f10f810d4f.svg",
+    "static/media/reshot-icon-github-NY46M9DGFU.svg": "/myPortfolio/static/media/reshot-icon-github-NY46M9DGFU.6fc668fe6389f1e62012906d8cb9fd56.svg",
+    "static/media/reshot-icon-facebook-square-GCAE9R73J5.svg": "/myPortfolio/static/media/reshot-icon-facebook-square-GCAE9R73J5.861a19fa7c79c5e982df9e0f79a683c2.svg",
+    "static/media/slick.svg": "/myPortfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/myPortfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/myPortfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/reshot-icon-user-QLCUYJBKM3.svg": "/myPortfolio/static/media/reshot-icon-user-QLCUYJBKM3.1eefef2790871184dd4c9759cd57bcdf.svg",
+    "static/media/reshot-icon-google-U3H6LWBGDC.svg": "/myPortfolio/static/media/reshot-icon-google-U3H6LWBGDC.df249d0e20c4428bd4c3b006cabb8258.svg",
+    "static/media/slick.woff": "/myPortfolio/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/reshot-icon-contact-Y7UEDRJZX9.svg": "/myPortfolio/static/media/reshot-icon-contact-Y7UEDRJZX9.733b558d0ef43cdfb1face608f8fa88d.svg",
+    "index.html": "/myPortfolio/index.html",
+    "static/media/reshot-icon-pen-tool-LCMSVR8HBE.svg": "/myPortfolio/static/media/reshot-icon-pen-tool-LCMSVR8HBE.bb8e88d878bbda842b5aab1b4da8197b.svg",
+    "main.4dfd96b2.css.map": "/myPortfolio/static/css/main.4dfd96b2.css.map",
+    "main.ef7f32f5.js.map": "/myPortfolio/static/js/main.ef7f32f5.js.map",
+    "787.3503cf78.chunk.js.map": "/myPortfolio/static/js/787.3503cf78.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dfd96b2.css",
+    "static/js/main.ef7f32f5.js"
+  ]
+}
