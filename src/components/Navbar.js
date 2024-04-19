@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import logo from "../components/pictures/logo.svg";
+import { Link } from "react-scroll";
 import "../index.css";
 
 const Navbar = () => {
-	const option = ["Homepage", "Contact", "Pricing", "Portfolios", "Sign Out"];
+	const option = ["Home", "About", "Resume", "Pojects", "Hire Me"];
 
 	const [isOpen, setIsOpen] = useState(false);
 	const [selectedOption, setSelectedOption] = useState(option[0]);
@@ -40,8 +41,8 @@ const Navbar = () => {
 		<nav
 			className={
 				isScrolled
-					? "   border-yellow-700 text-white fixed z-50 bg-gradient-to-tr from-gray-800 to-slate-600 w-screen"
-					: "text-yellow-500 border-yellow-200  fixed z-50 bg-black w-screen"
+					? "  shadow-2xl drop-shadow-2xl border-yellow-700 text-yellow-600 fixed z-50 bg-gradient-to-r from-slate-700 via-zinc-800 to-slate-900 w-screen"
+					: "text-yellow-500 border-yellow-200  fixed z-50 bg-transparent w-screen"
 			}
 		>
 			<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -55,7 +56,7 @@ const Navbar = () => {
 						alt="Flowbite Logo"
 					/>
 
-					<span className="self-center text-2xl font-bold whitespace-nowrap   font-Poppins ">
+					<span className="self-center text-2xl font-black whitespace-nowrap  font-Preahvihear uppercase tracking-widest ">
 						Portfolio
 					</span>
 				</a>
@@ -92,7 +93,7 @@ const Navbar = () => {
 							: "transform fixed left-[-60%] translate-x-[-100%] ease-out duration-500 bg-white"
 					}
 				>
-					<div className=" bg-black  text-white shadow-xs">
+					<div div className=" bg-black  text-white shadow-xs">
 						<div
 							className="py-1 w-[60%] h-screen  bg-slate-900 fixed grid "
 							role="menu"
@@ -119,101 +120,76 @@ const Navbar = () => {
 					id="navbar-dropdown  "
 				>
 					<ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
-						<li className=" pr-5">
-							<a
-								href="#"
-								className="block px-2 text-white  rounded md:bg-transparent md:hover:text-blue-700 md:p-0"
-								aria-current="page"
-							>
-								Home
-							</a>
-						</li>
-						<li className=" pr-5">
-							<button
-								id="dropdownNavbarLink"
-								data-dropdown-toggle="dropdownNavbar"
-								className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
-							>
-								Dropdown{" "}
-								<svg
-									className="w-2.5 h-2.5 ml-2.5"
-									aria-hidden="true"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 10 6"
+						<Link to="Home">
+							<li className=" pr-5">
+								<a
+									href="#"
+									className={
+										isScrolled
+											? "block py-2 px-2  text-slate-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:scale-110 font-bold duration-300 hover:text-yellow-500"
+											: "block py-2 px-2  text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0 font-bold"
+									}
 								>
-									<path
-										stroke="currentColor"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="m1 1 4 4 4-4"
-									/>
-								</svg>
-							</button>
-
-							<div
-								id="dropdownNavbar"
-								className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 "
-							>
-								<ul
-									className="py-2 text-sm text-gray-700"
-									aria-labelledby="dropdownLargeButton"
+									Home
+								</a>
+							</li>
+						</Link>
+						<Link to="About">
+							<li className="  pr-5">
+								<a
+									href="#"
+									className={
+										isScrolled
+											? "block py-2 px-2  text-slate-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:scale-110 duration-300 hover:text-yellow-500 font-bold"
+											: "block py-2 px-2  text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0 font-bold"
+									}
 								>
-									<li>
-										<a href="#" className="block px-2 py-2 hover:bg-gray-100">
-											Dashboard
-										</a>
-									</li>
-									<li>
-										<a href="#" className="block px-2 py-2 hover:bg-gray-100">
-											Settings
-										</a>
-									</li>
-									<li>
-										<a
-											href="#"
-											className="block px-2 py-2 hover:bg-gray-100
-											"
-										>
-											Earnings
-										</a>
-									</li>
-								</ul>
-								<div className="py-1">
-									<a
-										href="#"
-										className="block px-2 py-2 text-sm  text-white hover:bg-gray-100"
-									>
-										Sign out
-									</a>
-								</div>
-							</div>
-						</li>
-						<li className="  pr-5">
-							<a
-								href="#"
-								className="block py-2 px-2  text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-							>
-								Services
-							</a>
-						</li>
-						<li className="pr-5">
-							<a
-								href="#"
-								className="block px-2 pr-4  text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-							>
-								Pricing
-							</a>
-						</li>
-						<li className="pr-5">
-							<a
-								href="#"
-								className="block py-2 pl-1 pr-4  text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-							>
-								Contact
-							</a>
-						</li>
+									About
+								</a>
+							</li>
+						</Link>
+						<Link to="Resume">
+							<li className="pr-5">
+								<a
+									href="#"
+									className={
+										isScrolled
+											? "block py-2 px-2  text-slate-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:scale-110 duration-300 hover:text-yellow-500 font-bold"
+											: "block py-2 px-2  text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0 font-bold"
+									}
+								>
+									Resume
+								</a>
+							</li>
+						</Link>
+						<Link to="Projects">
+							<li className="pr-5">
+								<a
+									href="#"
+									className={
+										isScrolled
+											? "block py-2 px-2  text-slate-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:scale-110 duration-300 hover:text-yellow-500 font-bold"
+											: "block py-2 px-2  text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0 font-bold"
+									}
+								>
+									Projects
+								</a>
+							</li>
+						</Link>
+						<Link to="HireMe">
+							<li className="pr-5">
+								<a
+									href="#"
+									className={
+										isScrolled
+											? "block py-2 px-2  text-slate-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:scale-110 duration-300 hover:text-yellow-500 font-bold"
+											: "block py-2 px-2  text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0 font-bold"
+									}
+								>
+									Hire Me
+								</a>
+							</li>
+						</Link>
 					</ul>
 				</div>
 			</div>

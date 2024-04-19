@@ -6,11 +6,13 @@ module.exports = {
 			fontFamily: {
 				unifrakturCook: ["UnifrakturCook"],
 				lilitaOne: ["Lilita", "One"],
+				Preahvihear: ["Tilt Warp", "sans-serif"],
 			},
+
 			screens: {
 				xs: "360px",
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("daisyui")],
 };
